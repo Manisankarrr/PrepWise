@@ -4,7 +4,11 @@ import Marquee from "react-fast-marquee";
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import { MarqueImg } from "@/components/marquee-img";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import inImage from "@/assets/img/in.jpg";
+import aiImage from "@/assets/img/AI.jpeg";
+
+
 
 const HomePage = () => {
   return (
@@ -46,15 +50,12 @@ const HomePage = () => {
 
         {/* image section */}
         <div className="w-full mt-4 rounded-xl bg-gray-100 h-[420px] drop-shadow-md overflow-hidden relative">
-          <img
-            src="/assets/img/hero.jpg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
+          <img src={inImage} alt="Interview" />;
 
+{/* 
           <div className="absolute top-4 left-4 px-4 py-2 rounded-md bg-white/40 backdrop-blur-md">
             Inteviews Copilot&copy;
-          </div>
+          </div> */}
 
           <div className="hidden md:block absolute w-80 bottom-4 right-4 px-4 py-2 rounded-md bg-white/60 backdrop-blur-md">
             <h2 className="text-neutral-800 font-semibold">Developer</h2>
@@ -93,7 +94,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
           <div className="col-span-1 md:col-span-3">
             <img
-              src="/assets/img/office.jpg"
+              src="/assets/img/hero.jpg"
               alt=""
               className="w-full max-h-96 rounded-md object-cover"
             />
@@ -105,12 +106,12 @@ const HomePage = () => {
               chances of landing your dream job. Let AI be your edge in
               today&apos;s competitive job market.
             </p>
-
+{/* 
             <Link to={"/generate"} className="w-full">
               <Button className="w-3/4">
                 Generate <Sparkles className="ml-2" />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Container>
