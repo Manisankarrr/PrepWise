@@ -4,9 +4,9 @@ import Marquee from "react-fast-marquee";
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import { MarqueImg } from "@/components/marquee-img";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import inImage from "@/assets/img/in.jpg";
-import aiImage from "@/assets/img/AI.jpeg";
+//import aiImage from "@/assets/img/AI.jpeg";
 
 
 
@@ -106,12 +106,12 @@ const HomePage = () => {
               chances of landing your dream job. Let AI be your edge in
               today&apos;s competitive job market.
             </p>
-{/* 
+
             <Link to={"/generate"} className="w-full">
               <Button className="w-3/4">
-                Generate <Sparkles className="ml-2" />
+                Start your journey <Sparkles className="ml-2" />
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </Container>
